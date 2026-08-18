@@ -1,9 +1,512 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>home page</title>
-  </head>
-  <body>
-    this is Gen repo on shihabeldin999
-  </body>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Without Watermark - تنزيل فيديوهات TikTok بسهولة وبجودة عالية.">
+
+    <title>Without Watermark | تنزيل فيديوهات TikTok</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="grid"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="navbar">
+
+        <div class="container nav-content">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <i class="fa-solid fa-download"></i>
+                </span>
+
+                <span>
+                    Without
+                    <strong>Watermark</strong>
+                </span>
+            </a>
+
+            <nav>
+                <a href="#home">الرئيسية</a>
+                <a href="#how">كيف يعمل؟</a>
+                <a href="#features">المميزات</a>
+            </nav>
+
+            <button class="theme-button" id="themeButton"
+                    aria-label="تغيير المظهر">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main id="home">
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="container hero-container">
+
+                <div class="hero-text">
+
+                    <div class="badge">
+                        <span class="pulse"></span>
+                        سريع • مجاني • سهل الاستخدام
+                    </div>
+
+                    <h1>
+                        حمّل فيديوهات
+                        <span>TikTok</span>
+                        بدون علامة مائية
+                    </h1>
+
+                    <p>
+                        احصل على فيديوهاتك المفضلة بجودة عالية
+                        وبطريقة بسيطة وسريعة، دون الحاجة إلى تثبيت أي تطبيق.
+                    </p>
+
+                </div>
+
+
+                <!-- 3D Downloader Card -->
+                <div class="downloader-wrapper">
+
+                    <div class="card-glow"></div>
+
+                    <div class="downloader-card">
+
+                        <div class="card-top">
+
+                            <div class="download-icon">
+                                <i class="fa-solid fa-cloud-arrow-down"></i>
+                            </div>
+
+                            <div>
+                                <h2>تنزيل فيديو</h2>
+                                <p>ألصق رابط TikTok هنا</p>
+                            </div>
+
+                        </div>
+
+
+                        <form id="downloadForm">
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-brands fa-tiktok"></i>
+
+                                <input
+                                    type="url"
+                                    id="videoUrl"
+                                    placeholder="https://www.tiktok.com/..."
+                                    autocomplete="off"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    id="pasteButton"
+                                    class="paste-button">
+                                    <i class="fa-regular fa-clipboard"></i>
+                                    لصق
+                                </button>
+
+                            </div>
+
+
+                            <button
+                                type="submit"
+                                id="downloadButton"
+                                class="download-button">
+
+                                <span class="button-text">
+                                    تنزيل بدون علامة مائية
+                                </span>
+
+                                <i class="fa-solid fa-arrow-down"></i>
+
+                                <span class="loader"></span>
+
+                            </button>
+
+                        </form>
+
+
+                        <div class="secure-note">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            لا نطلب منك تسجيل الدخول
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Top Advertisement -->
+        <section class="ad-section">
+
+            <div class="container">
+
+                <div class="ad-label">
+                    إعلان
+                </div>
+
+                <div class="ad-box">
+
+                    <!--
+                    ضع هنا كود AdSense الحقيقي بعد الموافقة
+                    على حسابك.
+
+                    لا تعدل كود AdSense الذي تحصل عليه من Google.
+                    -->
+
+                    <span class="ad-placeholder">
+                        مساحة إعلانية
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Result Section -->
+        <section class="result-section" id="resultSection">
+
+            <div class="container">
+
+                <div class="result-card">
+
+                    <div class="result-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+
+                    <h2>تم تجهيز الفيديو</h2>
+
+                    <p>
+                        يمكنك الآن تنزيل الفيديو.
+                    </p>
+
+                    <a href="#"
+                       id="realDownloadButton"
+                       class="real-download">
+
+                        <i class="fa-solid fa-download"></i>
+                        تنزيل الفيديو
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Ad shown after download request -->
+        <section class="download-ad-section" id="downloadAd">
+
+            <div class="container">
+
+                <div class="ad-label">
+                    إعلان
+                </div>
+
+                <div class="ad-box ad-after-download">
+
+                    <!--
+                    سيتم إظهار هذه المساحة بعد ضغط
+                    المستخدم على "تنزيل بدون علامة مائية".
+
+                    ضع كود AdSense المناسب هنا.
+                    -->
+
+                    <span class="ad-placeholder">
+                        مساحة إعلانية
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Features -->
+        <section class="features" id="features">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>لماذا Without Watermark؟</span>
+
+                    <h2>
+                        تجربة تنزيل بسيطة
+                        <br>
+                        وسريعة
+                    </h2>
+
+                </div>
+
+
+                <div class="feature-grid">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+
+                        <h3>سرعة عالية</h3>
+
+                        <p>
+                            واجهة مصممة لتوفير تجربة
+                            سريعة وبسيطة للمستخدم.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+
+                        <h3>بدون تعقيد</h3>
+
+                        <p>
+                            ألصق الرابط واضغط على زر التنزيل
+                            فقط.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+
+                        <h3>متوافق مع الهاتف</h3>
+
+                        <p>
+                            يعمل التصميم بشكل ممتاز على
+                            الهواتف والأجهزة اللوحية والكمبيوتر.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-shield"></i>
+                        </div>
+
+                        <h3>خصوصية أفضل</h3>
+
+                        <p>
+                            لا تحتاج إلى تسجيل الدخول
+                            لاستخدام الواجهة.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- How it works -->
+        <section class="how" id="how">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>طريقة الاستخدام</span>
+
+                    <h2>
+                        كيف يعمل؟
+                    </h2>
+
+                </div>
+
+
+                <div class="steps">
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            01
+                        </div>
+
+                        <i class="fa-solid fa-link"></i>
+
+                        <h3>انسخ الرابط</h3>
+
+                        <p>
+                            انسخ رابط فيديو TikTok الذي تريد تنزيله.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            02
+                        </div>
+
+                        <i class="fa-solid fa-paste"></i>
+
+                        <h3>ألصق الرابط</h3>
+
+                        <p>
+                            ألصق الرابط في مربع التنزيل أعلاه.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            03
+                        </div>
+
+                        <i class="fa-solid fa-download"></i>
+
+                        <h3>ابدأ التنزيل</h3>
+
+                        <p>
+                            اضغط على تنزيل بدون علامة مائية.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Bottom Advertisement -->
+        <section class="ad-section bottom-ad">
+
+            <div class="container">
+
+                <div class="ad-label">
+                    إعلان
+                </div>
+
+                <div class="ad-box">
+
+                    <span class="ad-placeholder">
+                        مساحة إعلانية
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+
+                    <span class="logo-icon">
+                        <i class="fa-solid fa-download"></i>
+                    </span>
+
+                    <span>
+                        Without
+                        <strong>Watermark</strong>
+                    </span>
+
+                </a>
+
+                <p>
+                    أداة بسيطة لتنزيل الفيديوهات بسهولة.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#">سياسة الخصوصية</a>
+                <a href="#">شروط الاستخدام</a>
+                <a href="#">تواصل معنا</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Without Watermark.
+            جميع الحقوق محفوظة.
+
+        </div>
+
+    </footer>
+
+
+    <div class="toast" id="toast">
+
+        <i class="fa-solid fa-circle-info"></i>
+
+        <span id="toastMessage"></span>
+
+    </div>
+
+
+    <script src="static/js/script.js"></script>
+
+</body>
 </html>
